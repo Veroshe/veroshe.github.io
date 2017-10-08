@@ -12,7 +12,7 @@
             position: relative;
         }
         .jumbotron{
-            background-image: url("background.jpg");
+            background-image: url("background1.jpg");
             background-size: cover ;
             margin-bottom: 0;
             -webkit-background-size: cover;
@@ -21,28 +21,40 @@
             color: white;
             text-align: center;
         }
-        #redirect{
-            margin-top: 80px;
+        .lead{
+            font-size: 30px;
         }
-
+        #appSummary{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .card-img-top{
+            width: 100%;
+        }
+        #footer{
+            padding-top: 15px;
+            margin-top: 10px;
+            text-align: center;
+            padding-bottom:10px;
+            width: 100%;
+            color: white;
+        }
     </style>
 </head>
-<body>
-        <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" id="navbar">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#YeeNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">Yee</a>
             <div class="collapse navbar-collapse" id="YeeNavbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Watch</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Learn</a>
+                        <a class="nav-link" href="#learn">Learn</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -51,7 +63,7 @@
                 </form>
             </div>
         </nav>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" id="jumbotron">
             <div class="container">
                 <h1 class="display-3">The best meme of the Internet</h1>
                 <p class="lead" style="margin-top: 30px;">This is The Webpage. It will provide you with basic knowledge about Yee.</p>
@@ -61,6 +73,46 @@
             </div>
         </div>
 
+        <div class="container">
+            <div id="appSummary">
+                <h1> Why Is Yee So Awesome</h1>
+                <p class="lead"> One does not simply live his life without good old Yee. Blablabla </p>
+            </div>
+        </div>
+
+        <div class="container" id="learn">
+
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="yee1.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">What Yee is</h4>
+                        <p class="card-text"> “Yee” is an onomatopoeia taken from a video featuring an animated dinosaur specified as Ankylosaurus called Peek singing a small jingle, only to be interrupted at the end by a Tyrannosaurus Rex named Oro shouting Yee!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="yee2.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Origin</h4>
+                        <p class="card-text">On June 6, 2010, YouTuber Celyciah uploaded the peremptorily first source on the Internet, a shortcut clip titled Dinosauri antropomorfi dalle voci ambigue from the Italian version of animated film Dinosaur Adventure by Dingo </p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="yee1.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Phenomenon</h4>
+                        <p class="card-text"> On February 29, 2012, YouTuber revergo uploaded an edited version of the video with the title “Yee” accompanied with instrumentals from the movie itself. Within three years, the video gained over 2,000,000 views and 2600 comments.content than the first to show that equal height action.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-success"  id="footer">
+              <p   > Copyright: Weronika Kalinowska</p>
+            <p  > Source: http://knowyourmeme.com/memes/yee</p>
+
+        </div>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
