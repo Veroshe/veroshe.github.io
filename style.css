@@ -2,6 +2,9 @@ html, body {
     height: 100%;
     color: #22264B;
 }
+a{
+    color: #22264B;
+}
 .hidden-nav{
     text-align: center;
 }
@@ -10,7 +13,7 @@ html, body {
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 100px solid #CCB2A1;
+    border-bottom: 100px solid #DB5525;
 }
 .home-page{
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -40,30 +43,37 @@ html, body {
     letter-spacing: 1px;
 }
 #projects{
-    min-height: 100vh;
+    min-height: 70vh;
     min-width: 100vh;
     background-color:  #0D7581;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 5vh;
 }
 .card{
     display: inline-block;
-    width: 100%;
+    border-radius: 0;
+    background-color: #E8EDF3;
 }
 .portfolio{
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
-.card-img-top{
-    width:100%;
-}
+
 .parallax-window {
     min-height: 400px;
     background: transparent;
 }
 .parallax-mirror {
     z-index:300;
+}
+.btn{
+    background-color: #CCB2A1;
+}
+footer{
+    min-height: 20vh;
+    min-width: 100vh;
+    background-color: #CCB2A1;
+    padding: 5vh;
 }
 @media (max-width: 576px) {
     .col-sm-4 {
