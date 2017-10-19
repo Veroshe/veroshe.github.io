@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    color: #22264B;
+}
+.hidden-nav{
+    text-align: center;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #CCB2A1;
+}
+.home-page{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #E8EDF3;
+}
+#about-container{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    background-color: #0D7581;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#about{
+    background-color: #E8EDF3;
+    min-height: 70vh;
+    min-width: 100vh;
+    padding: 10vh;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+#projects{
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color:  #0D7581;
+    padding-left: 0;
+    padding-right: 0;
+}
+.card{
+    display: inline-block;
+    width: 100%;
+}
+.portfolio{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.card-img-top{
+    width:100%;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.parallax-mirror {
+    z-index:300;
+}
+@media (max-width: 576px) {
+    .col-sm-4 {
+        min-height: 70vh;
+    }
+}
+
