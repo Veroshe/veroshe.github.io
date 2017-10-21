@@ -26,8 +26,8 @@ a{
     background-color: #E8EDF3;
 }
 #about-container{
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh;
+    min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 90vh;
     background-color: #0D7581;
     display: flex;
     align-items: center;
@@ -37,18 +37,14 @@ a{
 #about{
     background-color: #E8EDF3;
     min-height: 70vh;
-    min-width: 100vh;
     padding: 10vh;
     line-height: 2;
     letter-spacing: 1px;
 }
 #projects{
-    min-height: 70vh;
-    min-width: 100vh;
+
     background-color:  #0D7581;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 5vh;
+
 }
 .card{
     display: inline-block;
@@ -57,21 +53,21 @@ a{
 }
 .portfolio{
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
-
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
-.parallax-mirror {
-    z-index:300;
+.col-lg-4{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .btn{
     background-color: #CCB2A1;
 }
 footer{
     min-height: 20vh;
-    min-width: 100vh;
     background-color: #CCB2A1;
     padding: 5vh;
 }
