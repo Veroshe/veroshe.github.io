@@ -15,41 +15,36 @@ a{
     border-right: 50px solid transparent;
     border-bottom: 100px solid #DB5525;
 }
-.home-page{
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-
+.col-lg-4, .home-page, #about-container{
     display: flex;
     align-items: center;
     flex-flow: row wrap;
     justify-content: center;
+}
+.home-page{
+    min-height: 100%;
+    min-height: 100vh;
     background-color: #E8EDF3;
 }
 #about-container{
     min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 90vh;
-    background-color: #0D7581;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    justify-content: center;
+}
+#projects, #about-container{
+    background-color:  #0D7581;
+}
+#about, .card{
+    background-color: #E8EDF3;
 }
 #about{
-    background-color: #E8EDF3;
     min-height: 70vh;
     padding: 10vh;
     line-height: 2;
     letter-spacing: 1px;
 }
-#projects{
-
-    background-color:  #0D7581;
-
-}
 .card{
     display: inline-block;
     border-radius: 0;
-    background-color: #E8EDF3;
 }
 .portfolio{
     text-align: center;
@@ -58,17 +53,13 @@ a{
 }
 .col-lg-4{
     min-height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    justify-content: center;
 }
-.btn{
-    background-color: #CCB2A1;
+.btn, .pos-f-t, .navbar{
+    background-color: #5BACA3;
 }
 footer{
     min-height: 20vh;
-    background-color: #CCB2A1;
+    background-color: #5BACA3;
     padding: 5vh;
 }
 @media (max-width: 576px) {
@@ -76,4 +67,18 @@ footer{
         min-height: 70vh;
     }
 }
-
+@media (max-width: 874px) {
+    .about-container{
+        min-height: 100vh;
+    }
+    #about {
+        min-height: 60vh;
+        padding: 5vh;
+    }
+}
+@media (max-width: 602px) {
+    #about {
+        padding: 2vh;
+        line-height: 1.25;
+    }
+}
