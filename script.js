@@ -18,7 +18,7 @@ window.onload = function() {
         console.log(x, y);
         add(x, y);
         var color = 'rgb(113, 39, 39)';
-        var percent = 0;
+        var percent = 1;
         fill(x, y, color, percent);
 
     });
@@ -68,10 +68,7 @@ window.onload = function() {
         var z = 0.5;
         for (i = 0; i < 20; i++) {
             
-           // if(color === 'rgb(113, 39, 39)')
-            //    ctx.fillStyle = 'rgb(113, 39, 39)';
-         //   else
-            //     ctx.fillStyle = shadeRGBColor(color, percent);
+               ctx.fillStyle = shadeRGBColor(color, percent);
 
             //cross
             ctx.fillRect(x + i, y, 2, 2);
