@@ -101,6 +101,7 @@ window.onload = function() {
         
             percent += 0.05;
             z+=0.5;
+            console.log( ctx.fillStyle, z);
         }
     }
 
