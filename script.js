@@ -38,6 +38,7 @@ window.onload = function() {
             for (i = 0; i < arrayX.length; i++) {
                 console.log(arrayX[i], arrayY[i]);
                 ctx.clearRect((arrayX[i]+11),(arrayY[i]+11),121,121);
+                console.log("wooho");
             }
             arrayX.length = 0;
             arrayY.length = 0;
