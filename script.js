@@ -89,15 +89,30 @@ window.onload = function() {
       
           
             //skewy-skew
-            ctx.fillRect(x + z, y + i, 1, 1);
-            ctx.fillRect(x + i, y + z, 1, 1);
-            ctx.fillRect(x + i, y - z, 1, 1);
-            ctx.fillRect(x + z, y -i, 1, 1);
+          
+            if(color == 'rgb(255,255,255)')
+            {
+                 ctx.fillRect(x + z, y + i, 2, 2);
+                ctx.fillRect(x + i, y + z, 2, 2);
+                ctx.fillRect(x + i, y - z, 2, 2);
+                ctx.fillRect(x + z, y -i, 2, 2);
 
-            ctx.fillRect(x - z, y - i, 1, 1);
-            ctx.fillRect(x - i, y - z, 1, 1);
-            ctx.fillRect(x - i, y + z, 1, 1);
-            ctx.fillRect(x - z, y + i, 1, 1);
+                ctx.fillRect(x - z, y - i, 2, 2);
+                ctx.fillRect(x - i, y - z, 2, 2);
+                ctx.fillRect(x - i, y + z, 2, 2);
+                ctx.fillRect(x - z, y + i, 2, 2);
+            }
+            else{
+                    ctx.fillRect(x + z, y + i, 1, 1);
+                    ctx.fillRect(x + i, y + z, 1, 1);
+                    ctx.fillRect(x + i, y - z, 1, 1);
+                    ctx.fillRect(x + z, y -i, 1, 1);
+
+                    ctx.fillRect(x - z, y - i, 1, 1);
+                    ctx.fillRect(x - i, y - z, 1, 1);
+                    ctx.fillRect(x - i, y + z, 1, 1);
+                    ctx.fillRect(x - z, y + i, 1, 1);
+            }
         
             percent += 0.05;
             z+=0.5;
