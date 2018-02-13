@@ -68,7 +68,12 @@ window.onload = function() {
         var z = 0.5;
         for (i = 0; i < 20; i++) {
 
+            if(color == 'rgb(255,255,255)')
+                ctx.fillStyle= 'rgb(255,255,255)';
+            else
             ctx.fillStyle = shadeRGBColor(color, percent);
+            
+            console.log(ctx.fillStyle);
 
             //cross
             ctx.fillRect(x + i, y, 1, 1);
