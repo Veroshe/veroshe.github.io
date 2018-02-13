@@ -66,7 +66,7 @@ window.onload = function() {
 
     function fill(x, y, color, percent) {
         var z = 0.5;
-        for (i = 0; i < 20; i++) {
+        for (i = 1; i < 20; i++) {
 
             if(color == 'rgb(255,255,255)')
                 ctx.fillStyle= 'rgb(255,255,255)';
@@ -86,8 +86,8 @@ window.onload = function() {
             ctx.fillRect(x + i, y + i, 1, 1);
             ctx.fillRect(x + i, y - i, 1, 1);
             ctx.fillRect(x - i, y - i, 1, 1);
-            if(i>0)
-            {
+      
+          
             //skewy-skew
             ctx.fillRect(x + z, y + i, 1, 1);
             ctx.fillRect(x + i, y + z, 1, 1);
@@ -98,7 +98,7 @@ window.onload = function() {
             ctx.fillRect(x - i, y - z, 1, 1);
             ctx.fillRect(x - i, y + z, 1, 1);
             ctx.fillRect(x - z, y + i, 1, 1);
-            }
+        
             percent += 0.05;
             z+=0.5;
         }
