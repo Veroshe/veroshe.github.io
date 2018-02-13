@@ -20,6 +20,6 @@ html, body {
 .main-title{
     position: absolute;
     font-family: Helvetica, sans-serif;
-    font-size: 100px;
+    font-size: 80vw;
     letter-spacing: 2px;
 }
