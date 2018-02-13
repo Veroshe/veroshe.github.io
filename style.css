@@ -7,6 +7,9 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #sparkle{
     position: absolute;
@@ -16,6 +19,7 @@ html, body {
 }
 .main-title{
     position: absolute;
-    font-family: Helvetica;
-    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    font-size: 100px;
+    letter-spacing: 2px;
 }
