@@ -76,7 +76,7 @@ window.onload = function() {
             ctx.fillRect(x, y + i, 2, 2);
             ctx.fillRect(x, y - i, 2, 2);
             //skew
-            if(i>0){
+       
             ctx.fillRect(x - i, y + i, 2, 2);
             ctx.fillRect(x + i, y + i, 2, 2);
             ctx.fillRect(x + i, y - i, 2, 2);
@@ -91,7 +91,7 @@ window.onload = function() {
             ctx.fillRect(x - i, y - z, 1, 1);
             ctx.fillRect(x - i, y + z, 1, 1);
             ctx.fillRect(x - z, y + i, 1, 1);
-            }
+       
             percent += 0.1;
             z+=0.5;
         }
