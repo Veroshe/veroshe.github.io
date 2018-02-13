@@ -25,8 +25,8 @@ html, body {
 }
 .sub-title{
     color:rgb(113, 39, 39);
-     position: absolute;
+    position: relative;
     font-family: Helvetica, sans-serif;
-    font-size: 1vw;
+    font-size: 1.5vw;
     letter-spacing: 2px;
 }
