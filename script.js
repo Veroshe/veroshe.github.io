@@ -7,8 +7,8 @@ window.onload = function() {
     var canvas = document.getElementById('sparkle');
     var ctx = canvas.getContext("2d");
     ctx.scale(100,10);
-    //ctx.canvas.width = window.innerWidth;
-   // ctx.canvas.height = window.innerHeight;
+    ctx.canvas.width = document.getElementById('container').offsetWidth;
+    ctx.canvas.height = document.getElementById('container').offsetHeight;
     var arrayX = [];
     var arrayY = [];
     init();
