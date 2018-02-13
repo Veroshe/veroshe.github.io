@@ -67,8 +67,11 @@ window.onload = function() {
     function fill(x, y, color, percent) {
         var z = 0.5;
         for (i = 0; i < 20; i++) {
-
-            ctx.fillStyle = shadeRGBColor(color, percent);
+            
+            if(color === 'rgb(113, 39, 39)')
+                ctx.fillStyle = 'rgb(113, 39, 39)';
+            else
+                 ctx.fillStyle = shadeRGBColor(color, percent);
 
             //cross
             ctx.fillRect(x + i, y, 2, 2);
@@ -82,6 +85,7 @@ window.onload = function() {
             ctx.fillRect(x + i, y - i, 2, 2);
             ctx.fillRect(x - i, y - i, 2, 2);
             //skewy-skew
+                
             ctx.fillRect(x + z, y + i, 1, 1);
             ctx.fillRect(x + i, y + z, 1, 1);
             ctx.fillRect(x + i, y - z, 1, 1);
