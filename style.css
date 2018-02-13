@@ -16,4 +16,6 @@ html, body {
 }
 .main-title{
     position: absolute;
+    font-family: Helvetica;
+    font-size: 30px;
 }
