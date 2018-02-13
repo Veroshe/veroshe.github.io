@@ -107,7 +107,7 @@ window.onload = function() {
                     ctx.fillRect(x - z, y + i, 1, 1);
             }
         
-            percent += 0.05;
+            percent += 0.025;
             z+=0.5;
             console.log( ctx.fillStyle, z);
         }
