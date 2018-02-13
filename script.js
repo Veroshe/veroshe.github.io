@@ -37,7 +37,7 @@ window.onload = function() {
             color = 'rgb(255,255,255)';
             for (i = 0; i < arrayX.length; i++) {
                 console.log(arrayX[i], arrayY[i]);
-                ctx.clearRect((arrayX[i]-20),(arrayY[i]-20),100,100);
+                ctx.clearRect((arrayX[i]-40),(arrayY[i]-40),200,200);
                 console.log("weheheh");
             }
             arrayX.length = 0;
@@ -68,7 +68,7 @@ window.onload = function() {
 
     function fill(x, y, color, percent) {
         var z = 0.5;
-        for (i = 0; i < 20; i++) {
+        for (i = 0; i < 40; i++) {
 
             if(color == 'rgb(255,255,255)')
                 ctx.fillStyle= 'rgb(255,255,255)';
