@@ -67,7 +67,7 @@ window.onload = function() {
 
     function fill(x, y, color, percent) {
         var z = 0.5;
-        for (i = 1; i < 20; i++) {
+        for (i = 0; i < 20; i++) {
 
             if(color == 'rgb(255,255,255)')
                 ctx.fillStyle= 'rgb(255,255,255)';
