@@ -92,13 +92,13 @@ window.onload = function() {
           
             if(color == 'rgb(255,255,255)')
             {
-                 ctx.fillRect(x + z, y + i, 2, 2);
-                ctx.fillRect(x + i, y + z, 2, 2);
+                 ctx.fillRect(x + z, y + i, 3, 3);
+                ctx.fillRect(x + i, y + z, 3, 3);
                 ctx.fillRect(x + i, y - z, 2, 2);
                 ctx.fillRect(x + z, y -i, 2, 2);
 
-                ctx.fillRect(x - z, y - i, 2, 2);
-                ctx.fillRect(x - i, y - z, 2, 2);
+                ctx.fillRect(x - z, y - i, 3, 3);
+                ctx.fillRect(x - i, y - z, 3, 3);
                 ctx.fillRect(x - i, y + z, 2, 2);
                 ctx.fillRect(x - z, y + i, 2, 2);
             }
