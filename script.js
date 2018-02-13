@@ -92,7 +92,7 @@ window.onload = function() {
             ctx.fillRect(x - i, y + z, 1, 1);
             ctx.fillRect(x - z, y + i, 1, 1);
        
-            percent += 0.1;
+            percent += 0.05;
             z+=0.5;
         }
     }
