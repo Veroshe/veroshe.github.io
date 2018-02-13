@@ -71,16 +71,16 @@ window.onload = function() {
             ctx.fillStyle = shadeRGBColor(color, percent);
 
             //cross
-            ctx.fillRect(x + i, y, 2, 2);
-            ctx.fillRect(x - i, y, 2, 2);
-            ctx.fillRect(x, y + i, 2, 2);
-            ctx.fillRect(x, y - i, 2, 2);
+            ctx.fillRect(x + i, y, 1, 1);
+            ctx.fillRect(x - i, y, 1, 1);
+            ctx.fillRect(x, y + i, 1, 1);
+            ctx.fillRect(x, y - i, 1, 1);
             //skew
        
-            ctx.fillRect(x - i, y + i, 2, 2);
-            ctx.fillRect(x + i, y + i, 2, 2);
-            ctx.fillRect(x + i, y - i, 2, 2);
-            ctx.fillRect(x - i, y - i, 2, 2);
+            ctx.fillRect(x - i, y + i, 1, 1);
+            ctx.fillRect(x + i, y + i, 1, 1);
+            ctx.fillRect(x + i, y - i, 1, 1);
+            ctx.fillRect(x - i, y - i, 1, 1);
             //skewy-skew
             ctx.fillRect(x + z, y + i, 1, 1);
             ctx.fillRect(x + i, y + z, 1, 1);
