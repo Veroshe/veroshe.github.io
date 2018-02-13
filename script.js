@@ -81,7 +81,7 @@ window.onload = function() {
             ctx.fillRect(x + i, y - i, 1, 1);
             ctx.fillRect(x - i, y - i, 1, 1);
             //skosny-skos
-            /*ctx.fillRect(x - i, y + i - z, 1, 1);
+            ctx.fillRect(x - i, y + i - z, 1, 1);
             ctx.fillRect(x - i + z, y + i, 1, 1);
             ctx.fillRect(x + i - z, y + i, 1, 1);
             ctx.fillRect(x + i, y + i - z, 1, 1);
@@ -89,8 +89,7 @@ window.onload = function() {
             ctx.fillRect(x + i, y - i + z, 1, 1);
             ctx.fillRect(x + i - z, y - i, 1, 1);
             ctx.fillRect(x - i + z, y - i, 1, 1);
-            ctx.fillRect(x - i, y - i + z, 1, 1);*/
-            z += 0.05;
+            ctx.fillRect(x - i, y - i + z, 1, 1);
             percent += 0.05;
         }
     }
