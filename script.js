@@ -94,13 +94,14 @@ window.onload = function() {
             {
                  ctx.fillRect(x + z, y + i, 3, 3);
                 ctx.fillRect(x + i, y + z, 3, 3);
-                ctx.fillRect(x + i, y - z, 2, 2);
-                ctx.fillRect(x + z, y -i, 2, 2);
+                ctx.fillRect(x + i, y - z, 3, 3);
+                ctx.fillRect(x + z, y -i, 3, 3);
 
                 ctx.fillRect(x - z, y - i, 3, 3);
                 ctx.fillRect(x - i, y - z, 3, 3);
-                ctx.fillRect(x - i, y + z, 2, 2);
-                ctx.fillRect(x - z, y + i, 2, 2);
+                ctx.fillRect(x - i, y + z, 3, 3);
+                ctx.fillRect(x - z, y + i, 3, 3);
+                console.log("DZIALA");
             }
             else{
                     ctx.fillRect(x + z, y + i, 1, 1);
