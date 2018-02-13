@@ -37,7 +37,7 @@ window.onload = function() {
             color = 'rgb(255,255,255)';
             for (i = 0; i < arrayX.length; i++) {
                 console.log(arrayX[i], arrayY[i]);
-                fill(arrayX[i], arrayY[i],color,0);
+                ctx.clearRect((x+11),(y+11),11,11);
             }
             arrayX.length = 0;
             arrayY.length = 0;
@@ -92,16 +92,7 @@ window.onload = function() {
           
             if(color == 'rgb(255,255,255)')
             {
-                 ctx.fillRect(x + z, y + i, 5, 5);
-                ctx.fillRect(x + i, y + z, 5, 5);
-                ctx.fillRect(x + i, y - z, 3, 3);
-                ctx.fillRect(x + z, y -i, 3, 3);
-
-                ctx.fillRect(x - z, y - i, 5, 5);
-                ctx.fillRect(x - i, y - z, 5, 5);
-                ctx.fillRect(x - i, y + z, 3, 3);
-                ctx.fillRect(x - z, y + i, 3, 3);
-                console.log("DZIALA@");
+             console.log("white");
             }
             else{
                     ctx.fillRect(x + z, y + i, 1, 1);
