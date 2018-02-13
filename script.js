@@ -37,7 +37,7 @@ window.onload = function() {
             color = 'rgb(255,255,255)';
             for (i = 0; i < arrayX.length; i++) {
                 console.log(arrayX[i], arrayY[i]);
-                ctx.clearRect((x+11),(y+11),11,11);
+                ctx.clearRect((arrayX[i]+11),(arrayY[i]+11),11,11);
             }
             arrayX.length = 0;
             arrayY.length = 0;
