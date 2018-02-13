@@ -36,6 +36,7 @@ window.onload = function() {
         if (arrayX.length !== 0) {
             color = 'rgb(255,255,255)';
             for (i = 0; i < arrayX.length; i++) {
+                console.log(arrayX[i], arrayY[i]);
                 fill(arrayX[i], arrayY[i],color,0);
             }
             arrayX.length = 0;
@@ -72,8 +73,7 @@ window.onload = function() {
                 ctx.fillStyle= 'rgb(255,255,255)';
             else
             ctx.fillStyle = shadeRGBColor(color, percent);
-            
-            console.log(ctx.fillStyle);
+           
 
             //cross
             ctx.fillRect(x + i, y, 1, 1);
