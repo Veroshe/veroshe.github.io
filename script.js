@@ -4,32 +4,21 @@
 
 window.onload = function() {
     
-    var canvas = document.getElementById('sparkle');
-    var ctx = canvas.getContext("2d");
-    ctx.scale(100,10);
-    ctx.canvas.width = document.getElementById('container').offsetWidth;
-    ctx.canvas.height = document.getElementById('container').offsetHeight;
-    var arrayX = [];
-    var arrayY = [];
     init();
-    canvas.addEventListener('click',function(event) {
-        var x = event.layerX;
-        var y = event.layerY;
-        console.log(x, y);
-        add(x, y);
-        var color = 'rgb(113, 39, 39)';
-        var percent = 0;
-        fill(x, y, color, percent);
-
-    });
-
 
     function init() {
+        var canvas = document.getElementById('sparkle');
+        var ctx = canvas.getContext("2d");
+        ctx.scale(100,10);
+        ctx.canvas.width = document.getElementById('main-container').offsetWidth;
+        ctx.canvas.height = document.getElementById('main-container').offsetHeight;
+        var arrayX = [];
+        var arrayY = [];
         ctx.font = '20px Helvetica';
 
         setTimeout(draw, 1000);
+        canvas.addEventListener('click', clickListener);
     }
-
 
     function draw() {
 
@@ -47,18 +36,10 @@ window.onload = function() {
 
     }
 
-
-
-
     function shadeRGBColor(color, percent) {
         var f = color.split(","), t = percent < 0 ? 0 : 255, p = percent < 0 ? percent * -1 : percent,
             R = parseInt(f[0].slice(4)), G = parseInt(f[1]), B = parseInt(f[2]);
         return "rgb(" + (Math.round((t - R) * p) + R) + "," + (Math.round((t - G) * p) + G) + "," + (Math.round((t - B) * p) + B) + ")";
-    }
-
-    function blendRGBColors(c0, c1, p) {
-        var f = c0.split(","), t = c1.split(","), R = parseInt(f[0].slice(4)), G = parseInt(f[1]), B = parseInt(f[2]);
-        return "rgb(" + (Math.round((parseInt(t[0].slice(4)) - R) * p) + R) + "," + (Math.round((parseInt(t[1]) - G) * p) + G) + "," + (Math.round((parseInt(t[2]) - B) * p) + B) + ")";
     }
 
     function add(x, y) {
@@ -111,6 +92,15 @@ window.onload = function() {
             z+=0.5;
             console.log( ctx.fillStyle, z);
         }
+    }
+    function clickListener(event){
+        var x = event.layerX;
+        var y = event.layerY;
+        console.log(x, y);
+        add(x, y);
+        var color = 'rgb(113, 39, 39)';
+        var percent = 0;
+        fill(x, y, color, percent);
     }
 
 }
